@@ -97,10 +97,8 @@ body{
 }
 
 .btn{
-    background: #fff;
     border: 0px;
     border-radius: 30px;
-    color: #222;
     cursor: pointer;
     display: inline-block;
     font-size: 14px;
@@ -109,7 +107,12 @@ body{
     text-decoration: none;
 }
 
-.btn:hover{
+.btnBlanc{
+    background: #fff;
+    color: #222;
+}
+
+.btnBlanc:hover{
     background-color: #222;
     color: #fff;
 }
@@ -133,4 +136,41 @@ body{
 
 .feature h3{
     margin: 20px 0;
+}
+
+/* background personne */
+
+.personne{
+    height: 40vh;
+    background: url(https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project1/cafe3.jpg) center center/cover;
+}
+
+/* section reservation */
+
+.reservation{
+    align-items: center;
+    display: flex;
+    height: 40vh;
+    justify-content: center;    
+}
+
+.reservation .container{
+    max-width: 1000px;
+    text-align: center;
+}
+
+.reservation p{
+    margin: 20px 0;
+}
+
+.btnNoir{
+    background: #222;
+    color: #fff;
+}
+
+.btnNoir:hover{
+    border: 1px solid black;
+    background: #fff;
+    color: #222;
+    margin: -1px;
 }
