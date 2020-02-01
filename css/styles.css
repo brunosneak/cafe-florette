@@ -59,7 +59,8 @@ body{
     background: url(https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project1/cafe1.jpg);
     background-size: cover;
     display: flex;
-    height: 70vh;
+    flex-wrap: wrap;
+    min-height: 70vh;
     justify-content: center;
     text-align: center;
 
@@ -120,18 +121,24 @@ body{
 /* section features */
 
 .features{
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+}
+
+.features .container{
     align-items: center;
     display: flex;
-    height: 40vh;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 1000px;
 }
 
 .feature{
-    align-items: center;
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 30%;
+    width: 50%;
 }
 
 .feature h3{
@@ -202,7 +209,7 @@ footer{
     width: 45%;
 }
 
-.whereText h2{
+.underline{
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
 }
@@ -226,4 +233,40 @@ footer{
 
 .chipBrown{
     background: #8c5e24;
+}
+
+/* page contact */
+
+.contact{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.monFormulaire{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.monFormulaire label{
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.monFormulaire input, .monFormulaire textarea{
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 15px;
+    resize: none;
+    width: 100%;
+}
+
+.monFormulaire textarea{
+    margin-bottom: 20px;
+}
+
+.btnSize{
+    width: 140px;
 }
