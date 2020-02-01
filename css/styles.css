@@ -18,6 +18,7 @@ body{
 .header nav{
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -32,6 +33,7 @@ body{
 
 .header nav ul{
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
 }
 
@@ -50,3 +52,59 @@ body{
     background-color: #444;
 }
 
+/* section vp */
+
+.vp{
+    align-items: center;
+    background: url(https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project1/cafe1.jpg);
+    background-size: cover;
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.vpContent{
+    color: #fff;
+    max-width: 600px;
+}
+
+.vpContent h2{
+    display: flex;
+    font-size: 3rem;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.vpContent h2::after{
+    background-color: #000;
+    bottom: 0;
+    content: "";
+    height: 10px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 100px;
+}
+
+.vpContent p{
+    font-size: 18px;
+    margin: 20px 0;
+    letter-spacing: 0.5px;
+    line-height: 1.9em;
+}
+
+.btn{
+    background: white;
+    border: 0px;
+    border-radius: 30px;
+    color: #222;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 25px;
+    text-decoration: none;
+}
