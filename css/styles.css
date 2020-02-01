@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+/* header */
+
+.header{
+    background-color: #000;
+    overflow: auto;
+}
+
+.header nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1{
+    padding: 20px;
+}
+
+.header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.header nav ul li{
+    padding: 20px 0;
+}
+
+.header nav ul li a{
+    color: #fff;
+    padding: 25px;
+    text-decoration: none;
+}
+
+.header nav ul li a:hover,
+.active{
+    background-color: #444;
+}
+
