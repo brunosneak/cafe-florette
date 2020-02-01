@@ -97,7 +97,7 @@ body{
 }
 
 .btn{
-    background: white;
+    background: #fff;
     border: 0px;
     border-radius: 30px;
     color: #222;
@@ -107,4 +107,30 @@ body{
     font-weight: 700;
     padding: 15px 25px;
     text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #222;
+    color: #fff;
+}
+
+/* section features */
+
+.features{
+    align-items: center;
+    display: flex;
+    height: 40vh;
+    justify-content: space-evenly;
+}
+
+.feature{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+}
+
+.feature h3{
+    margin: 20px 0;
 }
